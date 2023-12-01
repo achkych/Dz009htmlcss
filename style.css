@@ -44,6 +44,11 @@ main {
     margin: 18px 0 18px 231px;
 }
 
+.nav__icons :hover {
+    background-color: yellow;
+    color: #F16D7F;
+}
+
 .nav__menu {
     display: flex;
     gap: 25px;
@@ -215,6 +220,23 @@ main {
     height: 100%;
 }
 
+.prod__card:hover {
+    background-color: #f0f0f0;
+    transition: background-color 0.3s;
+}
+
+.prod__card:hover .card__title {
+    color: coral;
+}
+
+.prod__card:hover .card__text {
+    color: #666;
+}
+
+.prod__card:hover .card__price {
+    color: #333;
+}
+
 .cart__btn {
     display: none;
     justify-content: center;
@@ -274,7 +296,8 @@ main {
     transition: color 0.25s linear, background-color 0.25s linear;
 }
 
-.prod__btn:hover {
+.prod__btn:hover,
+.prod__btn:active {
     color: #FFFFFF;
     background: #cd5364;
 }
